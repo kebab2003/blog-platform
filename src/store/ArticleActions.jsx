@@ -96,9 +96,8 @@ export const loadUser = () => async (dispatch) => {
 
   const token = localStorage.getItem('token');
 
-  // Если нет токена, считаем пользователя неавторизованным
   if (!token) {
-    dispatch({ type: 'LOAD_USER_FAILURE', payload: null }); // Токен не найден, не вызываем ошибку, а просто передаем null
+    dispatch({ type: 'LOAD_USER_FAILURE', payload: null });
     return;
   }
 
