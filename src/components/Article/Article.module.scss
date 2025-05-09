@@ -1,0 +1,79 @@
+.article_wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 26px 0;
+  padding: 15px;
+  width: 940px;
+  height: auto;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.article_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.article_title {
+  display: flex;
+  align-items: center;
+}
+
+.article_tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  border: 1px solid gray;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.article_profile {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы в колонку */
+  align-items: flex-end;
+  justify-content: flex-start; /* Чтобы элементы не растягивались */
+  height: 100%;
+}
+
+.profile_top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.profile_info {
+  text-align: right;
+}
+
+.article_profile img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article_buttons {
+  display: flex;
+  flex-direction: row; /* Кнопки теперь будут располагаться горизонтально */
+  gap: 10px; /* Отступы между кнопками */
+}
+
+.article_body {
+  display: block;
+  max-height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article_body_full {
+  max-height: none;
+  overflow: visible;
+}
